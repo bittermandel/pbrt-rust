@@ -1,0 +1,8 @@
+Sampler -> "SamplerIntegrator::Render()": Sample
+Camera -> "SamplerIntegrator::Render()": Ray
+
+"SamplerIntegrator::Render()" -> Camera: "Sample"
+"SamplerIntegrator::Render()" -> Film: "Sample, Radience"
+"SamplerIntegrator::Render()" -> "SamplerIntegrator::Li()": Ray
+
+"SamplerIntegrator::Li()" -> "SamplerIntegrator::Render()": Radience
